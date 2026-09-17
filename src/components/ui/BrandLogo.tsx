@@ -6,137 +6,29 @@ interface BrandLogoProps {
   withGlow?: boolean;
 }
 
-export const BrandLogo: React.FC<BrandLogoProps> = ({
-  size = 40,
-  className = '',
-  withGlow = true,
-}) => {
-  return (
-    <div
-      className={`relative inline-flex items-center justify-center shrink-0 ${className}`}
-      style={{ width: size, height: size }}
-    >
-      {withGlow && (
-        <div
-          className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-neon-cyan/30 via-neon-purple/20 to-neon-pink/20 blur-md opacity-70 group-hover:opacity-100 transition-opacity pointer-events-none"
-        />
-      )}
-
-      <svg
-        viewBox="0 0 100 100"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-full relative z-10 filter drop-shadow-[0_2px_8px_rgba(0,240,255,0.35)]"
-      >
-        <defs>
-          {/* Main Neon Cyan to Violet Gradient */}
-          <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#00F0FF" />
-            <stop offset="50%" stopColor="#8B5CF6" />
-            <stop offset="100%" stopColor="#EC4899" />
-          </linearGradient>
-
-          {/* Core Play Prism Gradient */}
-          <linearGradient id="prismGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#00F0FF" />
-            <stop offset="100%" stopColor="#00A3FF" />
-          </linearGradient>
-
-          {/* Metallic Glass Background Gradient */}
-          <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#141420" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#09090e" stopOpacity="0.95" />
-          </linearGradient>
-        </defs>
-
-        {/* Outer Premium Squircle Housing */}
-        <rect
-          x="3"
-          y="3"
-          width="94"
-          height="94"
-          rx="24"
-          fill="url(#bgGrad)"
-          stroke="url(#brandGrad)"
-          strokeWidth="2"
-          strokeOpacity="0.85"
-        />
-
-        {/* Ambient Corner Accent Lines */}
-        <path
-          d="M 16 28 C 16 20 20 16 28 16"
-          stroke="#00F0FF"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeOpacity="0.7"
-        />
-        <path
-          d="M 84 72 C 84 80 80 84 72 84"
-          stroke="#EC4899"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeOpacity="0.7"
-        />
-
-        {/* Left Code Bracket: < */}
-        <path
-          d="M 28 36 L 19 50 L 28 64"
-          stroke="#00F0FF"
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Right Code Bracket: > */}
-        <path
-          d="M 72 36 L 81 50 L 72 64"
-          stroke="#A855F7"
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Central Monogram "A" & Cinematic Play Prism */}
-        {/* Outer Delta Apex */}
-        <path
-          d="M 50 24 L 37 72 L 44 72 L 48 58 L 52 58 L 56 72 L 63 72 Z"
-          fill="url(#brandGrad)"
-        />
-
-        {/* Inner Counterpart Window */}
-        <polygon
-          points="50,38 44,52 56,52"
-          fill="#09090e"
-        />
-
-        {/* Overlapping Cinematic Play Prism (Video Symbol) */}
-        <path
-          d="M 46 44 L 56 50 L 46 56 Z"
-          fill="url(#prismGrad)"
-          stroke="#FFFFFF"
-          strokeWidth="0.8"
-        />
-
-        {/* Subtle Horizontal Shutter Scanline / Crossbar */}
-        <line
-          x1="36"
-          y1="50"
-          x2="64"
-          y2="50"
-          stroke="#00F0FF"
-          strokeWidth="1.2"
-          strokeOpacity="0.6"
-          strokeDasharray="2 2"
-        />
-
-        {/* Precision Laser Core Dot */}
-        <circle
-          cx="50"
-          cy="25"
-          r="2"
-          fill="#FFFFFF"
-        />
-      </svg>
-    </div>
-  );
-};
+export const BrandLogo: React.FC<BrandLogoProps> = ({ size = 40, className = '', withGlow = true }) => (
+  <div className={`relative inline-flex items-center justify-center shrink-0 ${className}`} style={{ width: size, height: size }}>
+    {withGlow && <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-neon-cyan/30 via-neon-purple/20 to-neon-pink/20 blur-md opacity-70 group-hover:opacity-100 transition-opacity pointer-events-none" />}
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full relative z-10 filter drop-shadow-[0_2px_8px_rgba(0,240,255,0.35)]" aria-label="Adithya Sri Krishna logo" role="img">
+      <defs>
+        <linearGradient id="brandFrame" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#00F0FF" /><stop offset="0.52" stopColor="#8B5CF6" /><stop offset="1" stopColor="#EC4899" />
+        </linearGradient>
+        <linearGradient id="brandLetter" x1="32" y1="24" x2="70" y2="76" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FFFFFF" /><stop offset="0.5" stopColor="#00F0FF" /><stop offset="1" stopColor="#A855F7" />
+        </linearGradient>
+        <linearGradient id="brandCore" x1="43" y1="43" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#00F0FF" /><stop offset="1" stopColor="#3B82F6" />
+        </linearGradient>
+      </defs>
+      <rect x="4" y="4" width="92" height="92" rx="26" fill="#09090F" stroke="url(#brandFrame)" strokeWidth="2.5" />
+      <path d="M22 39L15 50L22 61" stroke="#00F0FF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M78 39L85 50L78 61" stroke="#A855F7" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M50 22L31 76H39L43 64H57L61 76H69L50 22Z" fill="url(#brandLetter)" />
+      <path d="M46 56L50 44L54 56H46Z" fill="#09090F" />
+      <path d="M48 47L57 52L48 57V47Z" fill="url(#brandCore)" stroke="#FFFFFF" strokeWidth="1" />
+      <path d="M35 82H65" stroke="#00F0FF" strokeWidth="2" strokeLinecap="round" strokeDasharray="3 4" opacity="0.65" />
+      <circle cx="50" cy="22" r="2.5" fill="#FFFFFF" />
+    </svg>
+  </div>
+);
