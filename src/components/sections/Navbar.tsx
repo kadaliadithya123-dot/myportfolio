@@ -105,7 +105,8 @@ export const Navbar: React.FC = () => {
             <button
               onClick={handleResumeDownload}
               onMouseEnter={playHover}
-              className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-neon-cyan to-blue-600 text-black font-semibold text-xs hover:brightness-110 shadow-neon-cyan transition-all"
+              aria-label="Download resume"
+              className="flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-neon-cyan to-blue-600 text-black font-semibold text-xs hover:brightness-110 shadow-neon-cyan transition-all"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Resume</span>
