@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { 
   Home, 
   User, 
-  Users,
   Cpu, 
   FolderGit2, 
   Sparkles, 
@@ -41,7 +40,6 @@ export const FloatingDock: React.FC = () => {
     { id: 'about', label: 'About', icon: User, action: () => scrollTo('about') },
     { id: 'skills', label: 'Skills', icon: Cpu, action: () => scrollTo('skills') },
     { id: 'projects', label: 'Projects', icon: FolderGit2, action: () => scrollTo('projects') },
-    { id: 'team', label: 'Team', icon: Users, action: () => scrollTo('team') },
     { id: 'services', label: 'Services', icon: Sparkles, action: () => scrollTo('services') },
     { id: 'contact', label: 'Contact', icon: Mail, action: () => scrollTo('contact') },
   ];

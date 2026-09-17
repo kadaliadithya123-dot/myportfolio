@@ -5,8 +5,7 @@ import {
   ExperienceItem, 
   EducationItem, 
   TestimonialItem, 
-  StatItem,
-  TeamMember
+  StatItem
 } from '../types';
 
 export const PERSONAL_INFO = {
@@ -163,8 +162,8 @@ export const PROJECTS: Project[] = [
     id: "nextgen-devs",
     title: "NextGen Devs",
     category: "Full Stack",
-    shortDesc: "Boutique web studio website for a small team building handcrafted, high-performance digital experiences.",
-    description: "The official website for NextGen Devs, a boutique web development studio serving founders, creators, gyms, tuition centers, and growing businesses. The site communicates the studio's craft-first approach, services, recent work, team, and client outcomes through a polished, conversion-focused experience.",
+    shortDesc: "Company website for a boutique web studio building handcrafted, high-performance digital experiences.",
+    description: "The official company website for NextGen Devs, a boutique web development studio serving founders, creators, gyms, tuition centers, and growing businesses. It presents the studio's mission to replace template-driven websites with bespoke digital experiences, along with its services, recent work, client outcomes, and contact process.",
     image: "https://nextgendevs.kadaliadithya123.workers.dev/assets/project-portfolio-kM1-KsRw.jpg",
     tags: ["React", "Vite", "Tailwind CSS", "Responsive UI", "Studio Website", "Cloudflare Workers"],
     githubUrl: "https://github.com/kadaliadithya123-dot",
@@ -177,7 +176,8 @@ export const PROJECTS: Project[] = [
     ],
     keyFeatures: [
       "Clear studio positioning built around handcrafted, conversion-focused websites",
-      "Service, project, team, testimonial, FAQ, and contact journeys in one cohesive experience",
+      "Service, project, testimonial, FAQ, and contact journeys in one cohesive experience",
+      "Clear craft-first positioning, transparent process, and long-term partnership values",
       "Performance-led presentation with responsive layouts and strong calls to action"
     ]
   },
@@ -384,43 +384,6 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Contributed to UI improvements and bug fixes across existing internal platforms"
     ],
     techStack: ["HTML", "CSS", "JavaScript", "Git", "React"]
-  }
-];
-
-export const TEAM_MEMBERS: TeamMember[] = [
-  {
-    id: "adithya-sri-krishna",
-    name: "Adithya Sri Krishna",
-    role: "Founder & Full-Stack Lead",
-    description: "Builds modern, high-performance websites and digital products with a strong focus on design, usability, and execution.",
-    specialties: ["React", "Frontend", "Full Stack"],
-    image: "https://nextgendevs.kadaliadithya123.workers.dev/assets/team-1-BqXWqflu.jpg",
-    linkedIn: "https://www.linkedin.com/in/adithya-sri-krishna-2b2608378/",
-    github: "https://github.com/kadaliadithya123-dot"
-  },
-  {
-    id: "manohar",
-    name: "Manohar",
-    role: "Head of Design",
-    description: "Shapes design systems and brand-led product experiences that balance beauty, clarity, and function.",
-    specialties: ["Figma", "UI/UX", "Motion"],
-    image: "https://nextgendevs.kadaliadithya123.workers.dev/assets/team-2-j2Ey8ey6.jpg"
-  },
-  {
-    id: "bhanu-prasad",
-    name: "Bhanu Prasad",
-    role: "Senior Frontend Engineer",
-    description: "Turns design files into fluid, accessible experiences and keeps every interaction fast, resilient, and polished.",
-    specialties: ["TypeScript", "Next.js", "Accessibility"],
-    image: "https://nextgendevs.kadaliadithya123.workers.dev/assets/team-3-DIrM4Ek-.jpg"
-  },
-  {
-    id: "surya",
-    name: "Surya",
-    role: "Product Designer",
-    description: "Crafts intuitive user experiences with a keen eye for detail and helps brands tell their story through design.",
-    specialties: ["UI/UX", "Next.js", "Figma"],
-    image: "https://nextgendevs.kadaliadithya123.workers.dev/assets/team-4-bjTzF9SK.jpg"
   }
 ];
 

@@ -81,13 +81,3 @@ export interface StatItem {
   description: string;
 }
 
-export interface TeamMember {
-  id: string;
-  name: string;
-  role: string;
-  description: string;
-  specialties: string[];
-  image: string;
-  linkedIn?: string;
-  github?: string;
-}
