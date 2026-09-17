@@ -60,7 +60,7 @@ class SoundEngine {
       osc.frequency.setValueAtTime(880, this.ctx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(1320, this.ctx.currentTime + 0.05);
 
-      gain.gain.setValueAtTime(0.3, this.ctx.currentTime);
+      gain.gain.setValueAtTime(0.03, this.ctx.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.0001, this.ctx.currentTime + 0.05);
 
       osc.connect(gain);
@@ -87,7 +87,7 @@ class SoundEngine {
       osc.frequency.setValueAtTime(520, this.ctx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(260, this.ctx.currentTime + 0.08);
 
-      gain.gain.setValueAtTime(0.8, this.ctx.currentTime);
+      gain.gain.setValueAtTime(0.08, this.ctx.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.0001, this.ctx.currentTime + 0.08);
 
       osc.connect(gain);
@@ -119,7 +119,7 @@ class SoundEngine {
         osc.type = 'sine';
         osc.frequency.setValueAtTime(freq, startTime);
 
-        gain.gain.setValueAtTime(0.6, startTime);
+        gain.gain.setValueAtTime(0.06, startTime);
         gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
 
         osc.connect(gain);
@@ -156,7 +156,7 @@ class SoundEngine {
       this.osc2.frequency.setValueAtTime(110.5, this.ctx.currentTime); // Slight detuned harmonic
 
       this.ambientGain.gain.setValueAtTime(0.0001, this.ctx.currentTime);
-      this.ambientGain.gain.linearRampToValueAtTime(0.24, this.ctx.currentTime + 3);
+      this.ambientGain.gain.linearRampToValueAtTime(0.024, this.ctx.currentTime + 3);
 
       this.osc1.connect(filter);
       this.osc2.connect(filter);
