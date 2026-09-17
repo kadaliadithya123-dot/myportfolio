@@ -9,6 +9,18 @@ import confetti from 'canvas-confetti';
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const { playHover, playClick, playSuccess } = useAudio();
+  const navLinks = [
+    { name: 'Home', target: '#hero' },
+    { name: 'About', target: '#about' },
+    { name: 'Skills', target: '#skills' },
+    { name: 'Projects', target: '#projects' },
+    { name: 'Team', target: '#team' },
+    { name: 'Services', target: '#services' },
+    { name: 'Experience', target: '#experience' },
+    { name: 'Education', target: '#education' },
+    { name: 'Testimonials', target: '#testimonials' },
+    { name: 'Contact', target: '#contact' }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,6 +114,25 @@ export const Navbar: React.FC = () => {
 
           </div>
         </div>
+
+        <nav className="mt-2 overflow-x-auto" aria-label="Primary navigation">
+          <div className="flex min-w-max items-center justify-center gap-1 px-1 sm:gap-2">
+            {navLinks.map((link) => (
+              <a
+                key={link.target}
+                href={link.target}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link.target);
+                }}
+                onMouseEnter={playHover}
+                className="rounded-lg px-2.5 py-1.5 text-[11px] sm:text-xs font-medium text-slate-400 hover:bg-white/10 hover:text-neon-cyan transition-colors whitespace-nowrap"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </nav>
       </div>
 
 
