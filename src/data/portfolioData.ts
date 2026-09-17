@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   location: "Bhimavaram, Andhra Pradesh, India",
   address: "4-45 Natta Rameswaram, Penumatra Mandal, West Godavari District, Andhra Pradesh, India",
   linkedIn: "https://www.linkedin.com/in/adithya-sri-krishna-2b2608378",
-  github: "https://github.com",
+  github: "https://github.com/kadaliadithya123-dot",
   twitter: "https://twitter.com",
   instagram: "https://instagram.com",
   youtube: "https://youtube.com",
