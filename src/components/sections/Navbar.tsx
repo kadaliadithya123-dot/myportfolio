@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Download } from 'lucide-react';
 
 import { useAudio } from '../../context/AudioContext';
@@ -19,6 +18,10 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (target: string) => {
+    playClick();
+    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
 
   const handleResumeDownload = () => {
