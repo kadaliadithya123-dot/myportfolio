@@ -79,6 +79,18 @@ export const Navbar: React.FC = () => {
             </div>
           </a>
 
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#hero');
+            }}
+            onMouseEnter={playHover}
+            className="absolute left-1/2 -translate-x-1/2 sm:hidden font-display font-black text-base text-white tracking-tight whitespace-nowrap"
+          >
+            Adithya's
+          </a>
+
 
           {/* Right Action Icons & Badges */}
           <div className="flex items-center gap-2.5">
