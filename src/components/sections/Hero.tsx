@@ -22,9 +22,9 @@ import { BrandLogo } from '../ui/BrandLogo';
 const ROLES = [
   "Video Editor",
   "Full Stack Developer",
+  "React Developer",
   "Creative Technologist",
-  "Motion Graphics Artist",
-  "UI/UX Enthusiast"
+  "UI/UX Specialist"
 ];
 
 export const Hero: React.FC = () => {
@@ -152,9 +152,18 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mb-8 mx-auto lg:mx-0"
+              className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mb-4 mx-auto lg:mx-0"
             >
               {PERSONAL_INFO.tagline}
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+              className="text-sm sm:text-base text-slate-400 leading-relaxed max-w-2xl mb-8 mx-auto lg:mx-0"
+            >
+              I help brands, creators, and businesses with video editing, full stack development, and premium website design—combining creative storytelling with clean, high-performing digital experiences.
             </motion.p>
 
             {/* 3 Action Buttons */}

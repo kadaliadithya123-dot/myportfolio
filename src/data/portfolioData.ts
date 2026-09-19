@@ -11,8 +11,8 @@ import {
 export const PERSONAL_INFO = {
   name: "Adithya Sri Krishna",
   headline: "Video Editor • Full Stack Developer",
-  tagline: "I craft engaging video edits and build polished, accessible web experiences with modern technologies.",
-  bio: "I am passionate about building modern web applications with clean UI, responsive design, and seamless user experiences. Alongside web development, I create engaging professional video edits using industry-standard editing techniques. I enjoy solving real-world problems through technology while continuously learning new tools and frameworks.",
+  tagline: "Adithya Sri Krishna is a video editor and full stack developer in Bhimavaram, Andhra Pradesh, India, creating cinematic edits and modern, responsive web experiences for businesses, creators, and startups.",
+  bio: "I help businesses and creators with video editing and full stack web development. From polished landing pages and React-based applications to high-retention video content, I combine creative storytelling with clean technical execution. Based in Bhimavaram, I build portfolio websites, freelance development projects, and brand-focused digital experiences that look premium and perform well.",
   email: "editncode@gmail.com",
   phone: "+91 97059 45589",
   location: "Bhimavaram, Andhra Pradesh, India",
@@ -57,7 +57,7 @@ export const STATS: StatItem[] = [
     label: "Creative Works & Edits",
     value: 50,
     suffix: "+",
-    description: "Commercial reels, motion graphics & color grades"
+    description: "Commercial reels, cinematic edits & color grades"
   }
 ];
 
@@ -119,11 +119,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     id: "creative",
     title: "Creative & Video Production",
-    description: "Visual storytelling, cinematic pacing, motion graphics, and brand identity.",
+    description: "Visual storytelling, cinematic pacing, and brand identity.",
     accent: "from-pink-500 to-rose-600",
     skills: [
       { name: "Professional Video Editing", level: 96, tag: "Cinema" },
-      { name: "Motion Graphics", level: 90, tag: "Animation" },
+      { name: "Cinematic Editing", level: 90, tag: "Animation" },
       { name: "Color Grading", level: 92, tag: "Aesthetics" },
       { name: "Thumbnail Design", level: 95, tag: "Conversion" },
       { name: "Logo Design", level: 88, tag: "Branding" },
@@ -296,8 +296,8 @@ export const SERVICES: ServiceItem[] = [
     badge: "Enterprise"
   },
   {
-    id: "motion-graphics",
-    title: "Motion Graphics & UI Animation",
+    id: "cinematic-editing",
+    title: "Cinematic Editing & UI Animation",
     tagline: "Bringing digital interfaces and videos to life",
     description: "Designing bespoke animations, title sequences, 3D elements, and micro-interactions that elevate brand perception and delight users.",
     icon: "Sparkles",
@@ -362,13 +362,13 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: "2024 - 2025",
     location: "Remote / Bhimavaram, AP",
     type: "Freelance",
-    description: "Delivering high-quality short-form and long-form video edits for content creators, with a focus on cinematic pacing, color grading, and motion graphics.",
+    description: "Delivering high-quality short-form and long-form video edits for content creators, with a focus on cinematic pacing, color grading, and polished visual storytelling.",
     highlights: [
       "Produced short-form and long-form edits for content creators across multiple platforms",
-      "Applied professional color grading and motion-driven effects to elevate visual storytelling",
+      "Applied professional color grading and visual effects to elevate storytelling",
       "Managed end-to-end post-production workflow from raw footage to final delivery"
     ],
-    techStack: ["Premiere Pro", "After Effects", "Color Grading", "Motion Graphics", "Sound Design"]
+    techStack: ["Premiere Pro", "After Effects", "Color Grading", "Sound Design", "Visual Storytelling"]
   },
   {
     id: "exp-3",
