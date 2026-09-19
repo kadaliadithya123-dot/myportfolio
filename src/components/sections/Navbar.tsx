@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
             onMouseEnter={playHover}
             className="flex min-w-0 items-center gap-2 sm:gap-3 group"
           >
-            <BrandLogo size={56} />
+            <BrandLogo size={48} />
             <div className="flex min-w-0 flex-col">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <span className="font-display font-black text-xs sm:text-base text-white group-hover:text-neon-cyan transition-colors tracking-tight truncate">
