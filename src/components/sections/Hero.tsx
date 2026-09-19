@@ -255,7 +255,7 @@ export const Hero: React.FC = () => {
                         
                         <div className="relative z-10 flex flex-col items-center">
                           <div className="mb-2 group-hover:scale-110 transition-transform">
-                            <BrandLogo size={64} withGlow={true} />
+                            <BrandLogo size={88} withGlow={true} />
                           </div>
                           <span className="font-display font-bold text-white text-base">
                             Adithya's
