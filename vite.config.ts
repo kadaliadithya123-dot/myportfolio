@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [react()],
   build: {
+    target: ['es2015', 'chrome87', 'firefox78', 'safari14', 'edge88'],
     chunkSizeWarningLimit: 800,
     rollupOptions: {
       output: {
