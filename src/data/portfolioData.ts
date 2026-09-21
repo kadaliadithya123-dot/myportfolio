@@ -98,7 +98,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     description: "Deploying production-ready applications with automated workflows.",
     accent: "from-emerald-500 to-teal-600",
     skills: [
-      { name: "Vercel", level: 94, tag: "Frontend Hosting" },
+      { name: "Cloudflare Pages", level: 96, tag: "Frontend Hosting" },
       { name: "Render", level: 88, tag: "Backend Cloud" },
       { name: "Cloudinary", level: 86, tag: "Media CDN" },
       { name: "Git & Version Control", level: 92, tag: "DevOps" },
@@ -290,7 +290,7 @@ export const SERVICES: ServiceItem[] = [
       "Full MERN stack web application builds",
       "Database schema design & query optimization",
       "Secure authentication (JWT, cookies, OAuth)",
-      "Automated deployment on Vercel & Render"
+      "Automated deployment on Cloudflare Pages & Render"
     ],
     techStack: ["React", "Node.js", "Express.js", "MongoDB", "REST APIs"],
     badge: "Enterprise"
