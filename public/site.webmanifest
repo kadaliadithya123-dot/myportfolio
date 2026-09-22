@@ -1,0 +1,21 @@
+{
+  "name": "Editncode | Adithya Sri Krishna",
+  "short_name": "Editncode",
+  "description": "Editncode by Adithya Sri Krishna: Video editor & full stack developer in Bhimavaram crafting cinematic content & modern React web experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
